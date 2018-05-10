@@ -6,17 +6,17 @@ const app = express()
 const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 5000
 
-let users = ['oscar', 'juan', 'marcos', 'julieta'];
-let books = [
-    {titulo: 'El señor de los anillos', autor: 'J.R.R. Tolkien'},
-    {titulo: "Cancion de hielo y fuego", autor: 'George RR Martin'}
-];
+let niveles = ['Juvenil', 'Profesional', 'Estrella', 'Leyenda'];
+let repuestas= ['1985', '1964', '1998', '2006'];
+let preguntas = [{titulo: 'Pregunta 1', nivel: 'juvenil', pregunta: '¿año del primer mundial de futbol?' ,id : 'j1'},
+
+    ];
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // ********************************************************************
-// ********************************************************************
+// ******************************************************************
 
 // URL raiz de la api
 // http://127.0.0.1:5000
